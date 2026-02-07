@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2005AB8A-191A-49DD-9A90-E952A0E2240E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>elly_gym</RootNamespace>
+    <AssemblyName>elly_gym</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\dintist\dintist\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Export, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.1.UI, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.1.Extensions, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DXL\dxl.cs" />
+    <Compile Include="forms\bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\bill.Designer.cs">
+      <DependentUpon>bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\buckup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\buckup.Designer.cs">
+      <DependentUpon>buckup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\comes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\comes.Designer.cs">
+      <DependentUpon>comes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\loginss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\loginss.Designer.cs">
+      <DependentUpon>loginss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\mortbat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\mortbat.Designer.cs">
+      <DependentUpon>mortbat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\new_playr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\new_playr.Designer.cs">
+      <DependentUpon>new_playr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\saleres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\saleres.Designer.cs">
+      <DependentUpon>saleres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\show_players.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\show_players.Designer.cs">
+      <DependentUpon>show_players.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\start.Designer.cs">
+      <DependentUpon>start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\total_costming.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\total_costming.Designer.cs">
+      <DependentUpon>total_costming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\bills.cs" />
+    <Compile Include="PL\mortbat.cs" />
+    <Compile Include="PL\players_pl.cs" />
+    <Compile Include="PL\srevers.cs" />
+    <Compile Include="PL\s_login.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="report\bills.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\bills.Designer.cs">
+      <DependentUpon>bills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\mortbat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\mortbat.Designer.cs">
+      <DependentUpon>mortbat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report\player.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="report\player.Designer.cs">
+      <DependentUpon>player.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="forms\bill.resx">
+      <DependentUpon>bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\buckup.resx">
+      <DependentUpon>buckup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\comes.resx">
+      <DependentUpon>comes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\loginss.resx">
+      <DependentUpon>loginss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\mortbat.resx">
+      <DependentUpon>mortbat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\new_playr.resx">
+      <DependentUpon>new_playr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\saleres.resx">
+      <DependentUpon>saleres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\show_players.resx">
+      <DependentUpon>show_players.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\start.resx">
+      <DependentUpon>start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\total_costming.resx">
+      <DependentUpon>total_costming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\bills.resx">
+      <DependentUpon>bills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\mortbat.resx">
+      <DependentUpon>mortbat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report\player.resx">
+      <DependentUpon>player.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="database\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\4.jpg" />
+    <Content Include="img\budget.png" />
+    <Content Include="img\loan.png" />
+    <Content Include="img\money-bag.png" />
+    <Content Include="img\online-payment.png" />
+    <Content Include="img\teammate.png" />
+    <Content Include="img\timetable.png" />
+    <None Include="img\Untitled-4.jpg" />
+    <None Include="img\Untitled-2.jpg" />
+    <None Include="img\Untitled-2-[Recovered].jpg" />
+    <None Include="img\ggg.jpg" />
+    <None Include="img\elly.jpg" />
+    <Content Include="img\backup.png" />
+    <Content Include="img\fitness.png" />
+    <Content Include="img\Fotolia_58139573_Subscription_XXL.jpg" />
+    <None Include="img\strong-man-without-t-shirt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

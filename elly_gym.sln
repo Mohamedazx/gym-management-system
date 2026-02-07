@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "elly_gym", "elly_gym.csproj", "{2005AB8A-191A-49DD-9A90-E952A0E2240E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "gym", "gym\gym.vdproj", "{FBD01C4A-8DE4-4857-B29D-E3AE383578AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2005AB8A-191A-49DD-9A90-E952A0E2240E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2005AB8A-191A-49DD-9A90-E952A0E2240E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2005AB8A-191A-49DD-9A90-E952A0E2240E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2005AB8A-191A-49DD-9A90-E952A0E2240E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBD01C4A-8DE4-4857-B29D-E3AE383578AA}.Debug|Any CPU.ActiveCfg = Debug
+		{FBD01C4A-8DE4-4857-B29D-E3AE383578AA}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC9E0909-DBBC-4EF2-9CA5-66B585793BAB}
+	EndGlobalSection
+EndGlobal
